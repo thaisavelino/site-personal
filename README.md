@@ -1,3 +1,8 @@
+# CV Website
+Website with my professional informations.
+
+## Technologies used
+
 Bootstrap
 http://getbootstrap.com/
 
