@@ -1,3 +1,8 @@
+# Personal Website
+CV website
+
+## Technologies used
+
 Bootstrap
 http://getbootstrap.com/
 
