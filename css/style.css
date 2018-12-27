@@ -18,7 +18,7 @@ body {
   line-height: 1.5;
   color: #7f7f7f;
   color: rgba(255, 255, 255, 0.7);
-  background: #fff;
+  background: #ffe7ec;
   height: 100%;
   position: relative;
   background-size: cover;
@@ -33,7 +33,7 @@ body {
 }
 
 a {
-  color: #ff9300;
+  color: #ff6181;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -45,7 +45,7 @@ a.white {
   margin: 0 0 30px 0;
 }
 a:hover, a:active, a:focus {
-  color: #ff9300;
+  color: #ff6181;
   outline: none;
 }
 
@@ -62,17 +62,17 @@ h1, h2, h3, h4, h5, h6 {
 
 ::-webkit-selection {
   color: #fff;
-  background: #ff9300;
+  background: #ff6181;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #ff9300;
+  background: #ff6181;
 }
 
 ::selection {
   color: #fff;
-  background: #ff9300;
+  background: #ff6181;
 }
 
 #fh5co-main {
@@ -80,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 600px;
   margin: 5em auto 5em auto;
   position: relative;
-  background: rgba(0, 0, 0, 0.85);
+  background: #082a38;
   overflow: hidden;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -164,7 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   content: "";
   height: 0;
-  background: #ff9300;
+  background: #ff6181;
   z-index: -1;
   top: 0;
   left: 0;
@@ -246,7 +246,7 @@ figure {
 
 .fh5co-counter .fh5co-number {
   font-size: 100px;
-  color: #ff9300;
+  color: #ff6181;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -316,7 +316,7 @@ figure {
   }
 }
 .fh5co-social li a:hover {
-  color: #ff9300;
+  color: #ff6181;
 }
 .fh5co-social li a:hover, .fh5co-social li a:active, .fh5co-social li a:focus {
   outline: none;
@@ -335,7 +335,7 @@ figure {
   margin-top: 5px;
 }
 .fh5co-feature .fh5co-icon i {
-  color: #ff9300;
+  color: #ff6181;
   font-size: 40px;
 }
 .fh5co-feature .fh5co-text {
@@ -394,7 +394,7 @@ figure {
 
 #fh5co-footer {
   margin-top: 50px;
-  background: black;
+  background: #012331;
   clear: both;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
