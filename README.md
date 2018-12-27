@@ -1,5 +1,5 @@
 # CV Website
-Website with my professional experiences and informations.
+Website with my professional informations.
 
 ## Technologies used
 
