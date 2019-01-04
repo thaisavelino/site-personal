@@ -37,9 +37,10 @@ if [ "${DEPLOY_COMMAND}" = "Everything up-to-date" ]; then
 	exit 1
 fi
 
-$(git add .)
-$(git commit -am "automatic")
-$(git push origin master)
+echo "***** git add ******* '$(git add .)'"
+echo "***** git commit **** "
+git commit -am "AUTOMATIC"
+echo "***** git push ****** '$(git push origin master)'"
 echo && echo "SUCESS Push has finished at $(date)"
 echo "*** SUCESS end ***"
 echo "See you soon '$(hostname -f)' =)"
