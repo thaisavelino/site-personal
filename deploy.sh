@@ -23,8 +23,6 @@ if [ "${DEPLOY_STATUS_MOD}" = "modified:" ]; then
 	echo && echo "SUCESS Push has finished at $(date)"
 	echo "*** SUCESS ***"
 	echo "See you soon '$(hostname -f)' =)"
-
-	exit 1
 fi
 
 DEPLOY_STATUS_PUSH="$(git status | grep up-to-date | awk '{ print $4}')"
