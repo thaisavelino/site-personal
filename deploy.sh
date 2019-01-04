@@ -19,10 +19,6 @@ if [ "${DEPLOY_STATUS_MOD}" = "modified:" ]; then
 	git add .
 	git commit -am "automatic deploy"
 	git push origin master
-
-	echo && echo "SUCESS Push has finished at $(date)"
-	echo "*** SUCESS ***"
-	echo "See you soon '$(hostname -f)' =)"
 fi
 
 DEPLOY_STATUS_PUSH="$(git status | grep up-to-date | awk '{ print $4}')"
