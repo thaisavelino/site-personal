@@ -23,7 +23,7 @@ fi
 DEPLOY_COMMAND="$(git push origin ${DEPLOY_BRANCH})"
 
 if [ "${DEPLOY_STATUS_PUSH}" = "up-to-date" ]; then
-	git push origin master
+	git push origin master || exit 1
 	echo && echo "SUCESS Push has finished at $(date)"
 	echo "*** SUCESS up-to-date ***"
 	echo "See you soon '$(hostname -f)' =)"
@@ -36,7 +36,7 @@ if [ "${DEPLOY_COMMAND}" = "Everything up-to-date" ]; then
 	exit 1
 fi
 
-git push origin master
+git push origin master || exit 1
 
 echo && echo "SUCESS Push has finished at $(date)"
 echo "*** SUCESS end ***"
