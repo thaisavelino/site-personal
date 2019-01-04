@@ -14,9 +14,6 @@ if [ "${DEPLOY_STATUS}" = "modified:" ]; then
 	echo && echo "*************************************"
 	echo "make sure you did git add and git commit "
 	echo "*************************************" && echo
-
-	git add .
-	git commit -am "automatic deploy"
 fi
 
 if [ "${DEPLOY_COMMAND}" = "Everything up-to-date" ]; then
