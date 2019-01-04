@@ -31,7 +31,7 @@ fi
 
 if [ "${DEPLOY_COMMAND}" = "Everything up-to-date" ]; then
 	echo "Nothing to push"
-	echo "*** SUCESS ***"
+	echo "*** SUCESS e ***"
 	echo "See you soon '$(hostname -f)' =)"
 	exit 1
 fi
