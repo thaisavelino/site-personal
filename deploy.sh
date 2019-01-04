@@ -10,8 +10,8 @@ export DEPLOY_BRANCH="master"
 #POST_UPDATE_CMD='cd ${DEPLOY_ROOT_THIS} && chmod +x deploy.sh && ./deploy.sh'
 ############################
 
-MY_IP="$(MY_IP addr show enp0s3 | grep 'inet ' | cut -f2 | awk '{ print $2}')"
-echo "Welcome to '$(hostname -f)' server (${MY_IP}) " && echo "Pushing work to PROD at $(date)" && echo mkdir -p "${DEPLOY_ROOT_THIS}" # Ensure directory exists.
+MY_IP="$(ip addr show enp0s3 | grep 'inet ' | cut -f2 | awk '{ print $2}')"
+echo "Welcome to '$(hostname -f)' server ${MY_IP} " && echo "Pushing work to PROD at $(date)" && echo mkdir -p "${DEPLOY_ROOT_THIS}" # Ensure directory exists.
 
 # Loop, because it is possible to push more than one branch at a time. (git push --all)
 while read oldrev newrev refname
