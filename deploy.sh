@@ -12,13 +12,12 @@ DEPLOY_STATUS_MOD="$(git status | grep modified | cut -f2 | awk '{print $1}')"
 DEPLOY_COMMAND="$(git push origin ${DEPLOY_BRANCH})"
 
 if [ "${DEPLOY_STATUS_MOD}" = "modified:" ]; then
-	#echo && echo "*************************************"
-	#echo "make sure you did git add and git commit "
-	#echo "*************************************" && echo
-	#echo "Nothing will be done..... "
-	git add .
-	git commit -am "automatic deploy"
-	git push origin master
+	echo && echo "*************************************"
+	echo "make sure you did git add and git commit "
+	echo "*************************************" && echo
+	echo "Nothing will be done..... "
+
+	exit 1
 fi
 
 DEPLOY_STATUS_PUSH="$(git status | grep up-to-date | awk '{ print $4}')"
