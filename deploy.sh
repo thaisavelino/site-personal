@@ -9,6 +9,7 @@ DEPLOY_BRANCH="$(git branch | grep "*" | awk '{ print $2}')"
 echo "Pushing to	'PROD'" && echo "at Branch	'${DEPLOY_BRANCH}'" && echo "of user		'${DEPLOY_USR_NAME}'" && echo "project 	'${DEPLOY_ROOT_THIS}'"
 
 DEPLOY_STATUS_MOD="$(git status | grep modified | cut -f2 | awk '{print $1}')"
+DEPLOY_COMMAND="$(git push origin ${DEPLOY_BRANCH})"
 
 if [ "${DEPLOY_STATUS_MOD}" = "modified:" ]; then
 	#echo && echo "*************************************"
@@ -17,9 +18,9 @@ if [ "${DEPLOY_STATUS_MOD}" = "modified:" ]; then
 	#echo "Nothing will be done..... "
 	git add .
 	git commit -am "automatic deploy"
+	echo ${DEPLOY_COMMAND}
 fi
 
-DEPLOY_COMMAND="$(git push origin ${DEPLOY_BRANCH})"
 DEPLOY_STATUS_PUSH="$(git status | grep up-to-date | awk '{ print $4}')"
 
 if [ "${DEPLOY_STATUS_PUSH}" = "up-to-date" ]; then
