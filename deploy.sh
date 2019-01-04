@@ -14,6 +14,8 @@ if [ "${DEPLOY_STATUS}" = "modified:" ]; then
 	echo && echo "*************************************"
 	echo "make sure you did git add and git commit "
 	echo "*************************************" && echo
+	echo "Nothing will be done..... "
+	exit 1
 fi
 
 if [ "${DEPLOY_COMMAND}" = "Everything up-to-date" ]; then
@@ -21,6 +23,7 @@ if [ "${DEPLOY_COMMAND}" = "Everything up-to-date" ]; then
 fi
 
 if [ "${DEPLOY_COMMAND}" != "Everything up-to-date" ]; then
+	echo ${DEPLOY_COMMAND}
 	echo && echo "SUCESS Push has finished at $(date)"
 fi
 
