@@ -27,7 +27,6 @@ if [ "${DEPLOY_STATUS_PUSH}" = "up-to-date" ]; then
 	echo && echo "SUCESS Push has finished at $(date)"
 	echo "*** SUCESS ***"
 	echo "See you soon '$(hostname -f)' =)"
-	exit 1
 fi
 
 if [ "${DEPLOY_COMMAND}" = "Everything up-to-date" ]; then
