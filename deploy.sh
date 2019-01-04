@@ -18,7 +18,7 @@ if [ "${DEPLOY_STATUS_MOD}" = "modified:" ]; then
 	#echo "Nothing will be done..... "
 	git add .
 	git commit -am "automatic deploy"
-	echo ${DEPLOY_COMMAND}
+	git push origin ${DEPLOY_BRANCH}
 fi
 
 DEPLOY_STATUS_PUSH="$(git status | grep up-to-date | awk '{ print $4}')"
