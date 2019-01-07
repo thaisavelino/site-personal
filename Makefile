@@ -8,14 +8,15 @@ WARN_STRING=$(WARN_COLOR)[WARNINGS]$(NO_COLOR)
 
 all:
 	@echo "Doing all"
-
-deploy:
 	@echo "Pushing to production"
 	@git add .
 	@git commit -am "merge into master"
 	@git push origin test
 	@git checkout master
 	@git merge test
+	deploy
+
+deploy:
 	@git add .
 	@git commit -am "automatic deploy"
 	@git push origin master
