@@ -10,12 +10,14 @@ all: update deploy
 	@echo "Doing all"
 
 deploy:
+	@echo "\n Makefile Starting DEPLOY\n\n...\n"
 	@git add .
-	@git commit -am "automatic deploy"
+	@git commit -am "Automatic deploy to production"
 	@git push origin master
+	@echo "============= OK ==============="
 
 update:
 	@echo "Welcome to the Server"
 	@whoami
 	@echo "\nMakefile doing UPDATE \n ... stuff like grunt, gulp, rake,... \n"
-	@pwd echo"\n"
+	@pwd
