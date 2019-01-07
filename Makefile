@@ -17,5 +17,5 @@ deploy:
 update:
 	@echo "Welcome to the Server"
 	@whoami
-	@echo "Makefile doing UPDATE \n ... stuff like grunt, gulp, rake,... \n..."
-	@pwd
+	@echo "\nMakefile doing UPDATE \n ... stuff like grunt, gulp, rake,... \n"
+	@pwd echo"\n"
