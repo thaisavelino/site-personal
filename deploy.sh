@@ -9,4 +9,4 @@ echo && echo "Welcome '$(hostname -f)' ip: ${MY_IP}" && echo "Start Pushing work
 echo "Pushing to prod at Branch '${DEPLOY_BRANCH}' of '${DEPLOY_USR_NAME}' project '${DEPLOY_ROOT_THIS}'"
 
 echo && echo "********************************" && echo "Push finished at $(date)"
-echo "See you soon '$(hostname -f)' =)"
+echo "See you soon '$(hostname -f)'"
