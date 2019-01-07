@@ -14,7 +14,7 @@ all:
 	@git push origin test
 	@git checkout master
 	@git merge test
-	deploy
+	make deploy
 
 deploy:
 	@git add .
