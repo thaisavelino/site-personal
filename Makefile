@@ -15,6 +15,14 @@ deploy:
 	@git commit -am "automatic deploy"
 	@git push origin master
 
+test:
+	@echo "Pushing to test"
+	@git checkout test
+	@git merge feaure
+	@git add .
+	@git commit -am "Testing before deploy"
+	@git push origin test
+
 update:
 	@echo "Makefile: Doing UPDATE stuff like grunt, gulp, rake,..."
 	@whoami
