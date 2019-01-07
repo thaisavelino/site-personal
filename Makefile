@@ -15,6 +15,7 @@ deploy:
 	@git push origin master
 
 update:
+	@echo "Welcome @whoami"
 	@echo "Makefile: Doing UPDATE stuff like grunt, gulp, rake,..."
 	@echo ""
 	@whoami
