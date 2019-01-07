@@ -11,7 +11,7 @@ all: update deploy
 
 deploy:
 	@echo "Makefile Starting DEPLOY\n\n"
-	@git add .
+	@git add *
 	@git commit -am "Automatic deploy to production"
 	@git push origin master
 	@echo "============= OK ==============="
