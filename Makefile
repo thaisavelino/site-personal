@@ -13,6 +13,7 @@ deploy:
 	@echo "Pushing to production"
 	@git add .
 	@git commit -am "merge into master"
+	@git push origin test
 	@git checkout master
 	@git merge test
 	@git add .
