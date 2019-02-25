@@ -36,16 +36,3 @@ if [ "${DEPLOY_COMMAND}" = "Everything up-to-date" ]; then
 	echo "See you soon '$(hostname -f)' =)"
 	exit 1
 fi
-
-<<<<<<< HEAD
-echo && echo "********************************" && echo "Push finished at $(date)"
-echo "See you soon '$(hostname -f)'"
-=======
-echo "***** git add ******* '$(git add .)'"
-echo "***** git commit **** "
-git commit -am "AUTOMATIC"
-echo "***** git push ****** '$(git push origin master)'"
-echo && echo "SUCESS Push has finished at $(date)"
-echo "*** SUCESS end ***"
-echo "See you soon '$(hostname -f)' =)"
->>>>>>> 8f83f67b6ab7c19fc703cf06d66ff697da52e0f7
